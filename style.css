@@ -1,0 +1,141 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&family=Plus+Jakarta+Sans:wght@400;500;700;800&family=Poppins:wght@200;400;600&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Poppins", serif;
+  font-size: 15px;
+  background: #f2f2f2;
+  display: grid;
+  place-content: center;
+}
+header {
+  margin-top: 80px;
+  display: grid;
+  place-content: center;
+}
+.header-container h1 {
+  font-size: 36px;
+  letter-spacing: 0.25px;
+  line-height: 54px;
+  text-align: center;
+}
+h1:first-child {
+  font-weight: 200;
+}
+
+.header-container p {
+  width: 540px;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 25px;
+  text-align: center;
+  color: #4d4f62;
+  opacity: 0.5;
+  margin-bottom: 64px;
+}
+
+.flex-container {
+  display: flex;
+  gap: 30px;
+}
+.flex-container p {
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 23px;
+  width: 286px;
+  opacity: 0.5;
+}
+.item {
+  width: 350px;
+  height: 250px;
+  padding-left: 32px;
+  background: #ffffff;
+  box-shadow: 0px 15px 30px -11px rgba(131, 166, 210, 0.5);
+  border-radius: 8px;
+  position: relative;
+}
+.item h3 {
+  padding-top: 32px;
+}
+
+.item div {
+  position: absolute;
+  top: 60%;
+  left: 70%;
+}
+.item div img {
+  width: 51px;
+}
+
+.item1 {
+  border-top: 4px solid rgba(68, 211, 210, 1);
+  margin-top: 10%;
+}
+.item2 {
+  border-top: 4px solid rgba(234, 84, 84, 1);
+  margin-bottom: 30px;
+}
+.item4 {
+  border-top: 4px solid rgba(84, 158, 242, 1);
+  margin-top: 10%;
+}
+.item3 {
+  border-top: 4px solid rgba(252, 174, 74, 1);
+}
+
+@media screen and (max-width: 575px) {
+  body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .header-container h1 {
+    font-size: 24px;
+    line-height: 36px;
+    margin-bottom: 13px;
+  }
+  .header-container p {
+    width: 311px;
+    line-height: 25px;
+    margin-bottom: 76px;
+    font-size: 15px;
+    margin: 0 52px;
+  }
+
+  .flex-container {
+    margin-top: 76px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .item {
+    justify-content: center;
+    width: 311px;
+  }
+
+  .flex-container h3 {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 30px;
+  }
+  .flex-container p {
+    padding-right: 28px;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 23px;
+    opacity: 0.5;
+  }
+
+  .item1,
+  .item4 {
+    margin-top: 0px;
+  }
+}
+.item4 {
+  margin-bottom: 60px;
+}
